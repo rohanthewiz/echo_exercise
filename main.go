@@ -23,6 +23,6 @@ func main() {
 	e.Logger.Fatal(e.Start(":1323"))
 }
 
-func root(ctx echo.Context) error {
-	return ctx.String(http.StatusOK, "Hello, World!")
+func root(c echo.Context) error {
+	return c.String(http.StatusOK, "Hello, World!")
 }
